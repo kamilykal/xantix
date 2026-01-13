@@ -1,0 +1,33 @@
+{
+  "name": "@labaykals/xantix",
+  "version": "2.0.0",
+  "description": "Xantix AI Library - Modern & Obfuscated",
+  "main": "dist/index.js",
+  "bin": {
+    "xantix": "dist/bin/xantix.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "labaykals",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "node-fetch": "^2.7.0",
+    "ollama": "^0.6.3"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^4.2.2"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "type": "commonjs"
+}
